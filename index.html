@@ -2,10 +2,36 @@
 <html lang="ko">
 <head>
 	<meta charset="UTF-8">
-	<title>github 수업용</title>
+	<title></title>
+	<style type="text/css">
+	.page-title{font-size:16px;}
+	#fakecrop img{height:100px;}
+	#fakecrop a {margin:2px;text-decoration:none;display:inline-block;border:1px solid #DDD;border-radius:3px;}
+	</style>
+	<link rel="stylesheet" href="assets/lightbox/jquery.fancybox.css" />
+	<script src="assets/jquery.js"></script>
+	<script src="assets/jquery.fakecrop.js"></script>
+	<script src="assets/lightbox/jquery.fancybox.pack.js"></script>
 </head>
 <body>
-	<h1>github 홈페이지 수업입니다.</h1>
-	<img src="img/snoopy.jpg" alt="" />
+	<h1 class="page-title">fakecrop <a href="https://github.com/VuongN/jQuery-Fakecrop" target="_blank">https://github.com/VuongN/jQuery-Fakecrop</a></h1>
+	<div id="fakecrop">
+		<a href="img/1.jpg" rel="gallery1"><img src="img/1.jpg" alt="" /></a>
+		<a href="img/2.jpg" rel="gallery1"><img src="img/2.jpg" alt="" /></a>
+		<a href="img/3.jpg" rel="gallery1"><img src="img/3.jpg" alt="" /></a>
+		<a href="img/4.jpg" rel="gallery1"><img src="img/4.jpg" alt="" /></a>
+		<a href="img/5.jpg" rel="gallery1"><img src="img/5.jpg" alt="" /></a>
+		<a href="img/6.jpg" rel="gallery1"><img src="img/6.jpg" alt="" /></a>
+		<a href="img/7.jpg" rel="gallery1"><img src="img/7.jpg" alt="" /></a>
+		<a href="img/8.jpg" rel="gallery1"><img src="img/8.jpg" alt="" /></a>
+		<a href="img/9.jpg" rel="gallery1"><img src="img/9.jpg" alt="" /></a>
+		<a href="img/10.jpg" rel="gallery1"><img src="img/10.jpg" alt="" /></a>
+	</div>
+	<script type="text/javascript">
+	$(function(){
+		$('#fakecrop img').fakecrop();
+		$('#fakecrop a').fancybox();
+	})
+	</script>
 </body>
 </html>
